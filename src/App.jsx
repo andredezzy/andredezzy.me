@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 import { Container } from "react-bootstrap";
 
 import Scrollbar from "./components/Scrollbar";
@@ -11,16 +11,14 @@ import AppProvider from "./AppProvider";
 class App extends Component {
     render() {
         return (
-            <AppWrapper>
+            <Container>
                 <GlobalStyle />
                 <Scrollbar />
 
                 <Header />
 
-                <Container>
-                    <AppProvider />
-                </Container>
-            </AppWrapper>
+                <AppProvider />
+            </Container>
         );
     }
 }
@@ -41,18 +39,4 @@ const GlobalStyle = createGlobalStyle`
         /* background-image: linear-gradient(#dc00ff, #aa00ff); */
         background-color: #fcfcfc;
     }
-
-    @media (min-width: 1200px){
-        .container {
-            max-width: 1440px;
-        }
-    }
-
-    @media (min-width: 992px){
-        .container {
-            max-width: 1240px;
-        }
-    }
 `;
-
-const AppWrapper = styled.div``;

@@ -2,7 +2,7 @@ import React from "react";
 
 import { HeaderContainer } from "./styles";
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 import Navbar from "./Navbar";
 
@@ -12,15 +12,13 @@ const Header = () => (
     <HeaderContainer>
         <Navbar />
 
-        <Container>
-            <Row className="justify-content-md-center">
-                <Col md="auto">
-                    <a href="#/">
-                        <img className="logo" src={Logo} alt="logo" />
-                    </a>
-                </Col>
-            </Row>
-        </Container>
+        <Row className="justify-content-md-center">
+            <Col md="auto">
+                <a href="#/">
+                    <img className="logo" src={Logo} alt="logo" />
+                </a>
+            </Col>
+        </Row>
     </HeaderContainer>
 );
 
