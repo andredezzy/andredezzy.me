@@ -1,28 +1,21 @@
 import styled from "styled-components";
 
 export const NavbarContainer = styled.div`
-    border-bottom: 0.5px solid #ccc;
+    border-bottom: 2px solid #eee;
 
     .navbar {
-        padding: 10px 15px 10px 15px;
-
         .navbar-brand {
-            color: #555;
-            text-transform: uppercase;
-            font-size: 18px;
+            transition: transform 0.3s ease-in-out;
+
+            :hover {
+                transform: scale(1.5);
+            }
         }
 
-        .mr-auto.navbar-nav {
-            margin-left: -50px;
-        }
-
-        .nav-link {
-            font-weight: 500;
-        }
-
-        .nav-link.active {
-            color: #444;
-            border-bottom: 2px solid #222;
+        .navbar-nav {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
         }
     }
 `;
