@@ -2,7 +2,7 @@
     "name": "andredezzy-portfolio",
     "version": "0.1.0",
     "private": false,
-    "homepage": "http://andredezzy.me/andredezzy-portfolio/",
+    "homepage": "http://andredezzy.me/andredezzy.me/",
     "dependencies": {
         "bootstrap": "^4.3.1",
         "react": "^16.8.6",
