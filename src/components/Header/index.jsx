@@ -12,6 +12,7 @@ import Logo from "../../assets/logo.png";
 import GitHubIcon from "../../assets/icons/github.svg";
 import TwitterIcon from "../../assets/icons/twitter.svg";
 import InstagramIcon from "../../assets/icons/instagram.svg";
+import LinkedInIcon from "../../assets/icons/linkedin.svg";
 
 const Header = () => (
     <HeaderContainer>
@@ -26,6 +27,7 @@ const Header = () => (
                 <Icon icon={GitHubIcon} maxWidth="140px" href="http://github.andredezzy.me" text="GitHub" />
                 <Icon icon={TwitterIcon} maxWidth="150px" href="http://twitter.andredezzy.me" text="Twitter" />
                 <Icon icon={InstagramIcon} maxWidth="175px" href="http://instagram.andredezzy.me" text="Instagram" />
+                <Icon icon={LinkedInIcon} maxWidth="155px" href="http://linkedin.andredezzy.me" text="LinkedIn" />
             </Col>
         </Row>
     </HeaderContainer>
