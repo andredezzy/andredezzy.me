@@ -1,29 +1,32 @@
 import styled from "styled-components";
 
 export const IconContainer = styled.div`
-    padding: 10px 10px;
+    padding: 10px;
     border-radius: 360px;
     background-color: #eee;
     margin-right: 10px;
     position: relative;
     width: 70px;
+    transition: width 1s ease-in-out;
 
     :hover {
         background-color: #ddd;
         color: #333;
         width: ${props => (props.maxWidth ? props.maxWidth : "100px")};
-        transition: width 1s ease-in-out;
 
         a span {
             animation: show-text 2s both;
-            top: 25px;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
 
             @keyframes show-text {
                 0% {
-                    margin-left: 30px;
+                    margin-left: 40px;
+                }
+                10% {
+                    margin-left: 50px;
                 }
                 100% {
-                    opacity: 1;
                     margin-left: 70px;
                 }
             }
@@ -45,11 +48,10 @@ export const IconContainer = styled.div`
             margin: 0 5px;
             font-weight: 500;
             text-transform: uppercase;
-            opacity: 0;
             position: absolute;
-            top: 0;
+            top: 25px;
             left: 0;
-            z-index: 3;
+            opacity: 0;
         }
     }
 `;
