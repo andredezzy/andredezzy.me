@@ -1,41 +1,44 @@
 {
-    "name": "andredezzy-portfolio",
-    "version": "0.1.0",
-    "private": false,
-    "homepage": "http://andredezzy.me/andredezzy.me/",
-    "dependencies": {
-        "bootstrap": "^4.3.1",
-        "react": "^16.8.6",
-        "react-bootstrap": "^1.0.0-beta.8",
-        "react-dom": "^16.8.6",
-        "react-router-dom": "^5.0.0",
-        "react-scripts": "3.0.0",
-        "styled-components": "^4.2.0"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
-    },
-    "eslintConfig": {
-        "extends": "react-app"
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "devDependencies": {
-        "gh-pages": "^2.0.1"
-    }
+  "name": "andredezzy.me",
+  "version": "0.1.0",
+  "private": false,
+  "homepage": "http://andredezzy.me/andredezzy.me/",
+  "dependencies": {
+    "@craco/craco": "^5.2.4",
+    "bootstrap": "^4.3.1",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.8",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.0",
+    "styled-components": "^4.2.0"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3"
+  }
 }
