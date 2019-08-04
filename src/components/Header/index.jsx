@@ -2,8 +2,8 @@ import React from 'react';
 
 import { Container, Images, Summary } from './styles';
 
-import Logo from '@/assets/logo.svg';
-import Kid from '@/assets/kid.svg';
+import Logo from '../../assets/logo.svg';
+import Kid from '../../assets/kid.svg';
 
 export default function Header() {
   return (
