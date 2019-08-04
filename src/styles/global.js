@@ -15,7 +15,7 @@ export default createGlobalStyle`
   }
 
   body {
-    font: 14px 'Poppins', sans-serif;
+    font: 21px 'Poppins', sans-serif;
     font-weight: 500;
     background: #F2F2F2;
     color: #707070;
