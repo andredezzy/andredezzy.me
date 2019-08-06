@@ -15,7 +15,7 @@ export default function Header() {
 
       <Summary>
         <div className="my-person mb-2">
-          <span>Hi, my name is:</span>
+          <span>Hi, i am:</span>
           <span>André &apos;Dezzy&apos; Victor Carvalho Viana</span>
         </div>
 
