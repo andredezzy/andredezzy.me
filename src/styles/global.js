@@ -10,7 +10,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  html, body, #app {
+  html, body, #app, .container {
     height: 100%;
   }
 
@@ -20,5 +20,25 @@ export default createGlobalStyle`
     background: #F2F2F2;
     color: #707070;
     -webkit-font-smoothing: antialiased !important;
+  }
+
+  .container {
+    @media (max-width: 1024px) {
+      padding: 0;
+      margin: 0;
+
+      max-width: 1024px;
+    }
+
+    @media (max-width: 1200px) {
+      padding: 0;
+      margin: 0;
+
+      max-width: 1200px;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 1220px;
+    }
   }
 `;

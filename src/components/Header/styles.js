@@ -7,7 +7,19 @@ export const Images = styled.div`
     margin-left: 35px;
   }
 
-  @media screen and (max-width: 992px) {
+  @media (max-width: 830px) {
+    & > img {
+      width: 140px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & > img {
+      width: 135px;
+    }
+  }
+
+  @media (max-width: 576px) {
     & > img {
       width: 130px;
     }
@@ -26,23 +38,33 @@ export const Summary = styled.div`
     }
   }
 
-  @media screen and (max-width: 992px) {
-    margin-left: 0;
-
-    font-size: 18px;
+  @media (max-width: 830px) {
+    margin: 0;
     margin-top: 25px;
+
+    font-size: 20px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 19px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 18px;
   }
 `;
 
 export const Container = styled.div`
-  margin-top: 50px;
-
   display: flex;
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 992px) {
-    margin-top: 40px;
+  @media (max-width: 1140px) {
+    margin-top: 137px;
+  }
+
+  @media (max-width: 830px) {
+    margin-top: calc(${window.outerHeight} * 0.05px);
     flex-direction: column;
   }
 `;
