@@ -1,2 +1,2 @@
 # andredezzy.me
-:fire: My front-end portfolio made with React
+:fire: My website (portfolio), and my personal card
