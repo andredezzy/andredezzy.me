@@ -22,6 +22,10 @@ export const Container = styled.div`
     margin-right: 20px;
   }
 
+  @media (min-width: 830px) {
+    margin-top: 50px;
+  }
+
   @media screen and (max-width: 1140px) {
     overflow: scroll;
     overflow-y: hidden;

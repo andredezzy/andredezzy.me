@@ -23,6 +23,10 @@ export const Images = styled.div`
     & > img {
       width: 130px;
     }
+
+    & :last-child {
+      margin-right: 10px;
+    }
   }
 `;
 
@@ -61,5 +65,9 @@ export const Container = styled.div`
 
   @media (max-width: 830px) {
     flex-direction: column;
+  }
+
+  @media (max-height: 568px) {
+    margin-top: 118px;
   }
 `;
