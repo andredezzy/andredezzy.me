@@ -16,5 +16,5 @@ export default function Body({ children }) {
 }
 
 Body.propTypes = {
-  children: PropTypes.array,
+  children: PropTypes.arrayOf(PropTypes.element).isRequired,
 };

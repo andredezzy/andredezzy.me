@@ -12,7 +12,7 @@ export const Container = styled.div`
   }
 
   @media (min-height: 768px) {
-    margin-top: 75px;
+    margin-top: calc(${window.outerHeight} * 0.07px);
   }
 
   @media screen and (max-width: 1140px) {

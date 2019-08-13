@@ -34,7 +34,7 @@ export const Summary = styled.div`
     flex-direction: column;
 
     span[aria-label='emoji'] {
-      margin: 0 7px;
+      margin-left: 7px;
     }
   }
 
@@ -59,12 +59,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 1140px) {
-    margin-top: 137px;
-  }
-
   @media (max-width: 830px) {
-    margin-top: calc(${window.outerHeight} * 0.05px);
     flex-direction: column;
   }
 `;
