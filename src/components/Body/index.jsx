@@ -6,6 +6,10 @@ import { Container, Spacing } from './styles';
 export default function Body({ children }) {
   return (
     <Container>
+      <Spacing>
+        <span>.</span>
+      </Spacing>
+
       {children}
 
       <Spacing>

@@ -39,7 +39,7 @@ export const Summary = styled.div`
   }
 
   @media (max-width: 830px) {
-    margin: 0;
+    margin: 0 20px;
     margin-top: 25px;
 
     font-size: 20px;

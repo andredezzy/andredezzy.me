@@ -9,6 +9,10 @@ export const Container = styled.div`
   top: 50%;
   transform: translateY(-50%);
 
+  @media (max-height: 700px) {
+    margin: 50px 0 30px 0;
+  }
+
   @media (min-width: 1140px) {
     display: flex;
     justify-content: center;
