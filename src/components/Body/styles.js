@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+// eslint-disable-next-line import/prefer-default-export
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
@@ -8,6 +9,18 @@ export const Container = styled.div`
   overflow: hidden;
 
   margin-top: 15px;
+
+  & > span {
+    font-size: 1px;
+  }
+
+  & > div:first-child {
+    margin-left: 15px;
+  }
+
+  & > div:last-of-type {
+    margin-right: 20px;
+  }
 
   @media screen and (max-width: 1140px) {
     overflow: scroll;
@@ -33,9 +46,4 @@ export const Container = styled.div`
   &::-webkit-scrollbar-thumb {
     background: #707070;
   }
-`;
-
-export const Spacing = styled.div`
-  display: flex;
-  font-size: 1px;
 `;
