@@ -25,7 +25,7 @@ export const Container = styled.div`
   cursor: default;
 
   & > span {
-    font-size: ${({ fontSize }) => fontSize || '45px'};
+    font-size: ${({ fontSize }) => fontSize || '44px'};
 
     opacity: ${({ opacity }) => opacity || '1'};
 
