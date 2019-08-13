@@ -7,13 +7,7 @@ export const Container = styled.div`
 
   overflow: hidden;
 
-  @media (max-height: 768px) {
-    margin-top: 15px;
-  }
-
-  @media (min-height: 768px) {
-    margin-top: calc(${window.outerHeight} * 0.07px);
-  }
+  margin-top: 15px;
 
   @media screen and (max-width: 1140px) {
     overflow: scroll;
