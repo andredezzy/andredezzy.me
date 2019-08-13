@@ -1,18 +1,17 @@
 import styled from 'styled-components';
 
+// eslint-disable-next-line import/prefer-default-export
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  margin-bottom: calc(${window.outerHeight} * 0.05px);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 
   @media (min-width: 1140px) {
-    height: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin-bottom: 0;
   }
 `;
