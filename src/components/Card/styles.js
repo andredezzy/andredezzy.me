@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: ${({ centered }) => (centered ? 'center' : 'flex-end')};
   align-items: center;
 
-  background: #f6f6f6;
+  background: #fff;
 
   margin: 15px;
 
