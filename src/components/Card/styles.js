@@ -24,6 +24,13 @@ export const Container = styled.div`
 
   cursor: default;
 
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.1);
+  }
+
   & > span {
     font-size: ${({ fontSize }) => fontSize || '44px'};
 

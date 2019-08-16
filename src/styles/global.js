@@ -8,6 +8,26 @@ export default createGlobalStyle`
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+
+    &::-webkit-scrollbar {
+      width: 15px;
+    }
+
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      border: 3px solid #f2f2f2;
+
+      margin: 0 35px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #ccc;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #aaa;
+    }
   }
 
   html, body, #app, .container {
