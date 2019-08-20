@@ -7,11 +7,13 @@ import Header from '@/components/Header';
 import Body from '@/components/Body';
 import Card from '@/components/Card';
 
-export default function Home({ setFloatComponent }) {
-  function handleOpenCard(cardId) {
-    console.log('clicked card -> ', cardId);
+import { getComponentForCard } from '@/components/Float/pages';
 
-    setFloatComponent(cardId);
+export default function Home({ setFloat }) {
+  function handleOpenCard(cardId, title) {
+    const component = getComponentForCard(cardId);
+
+    setFloat({ title, component });
   }
 
   return (
@@ -35,9 +37,9 @@ export default function Home({ setFloatComponent }) {
 }
 
 Home.propTypes = {
-  setFloatComponent: PropTypes.func,
+  setFloat: PropTypes.func,
 };
 
 Home.defaultProps = {
-  setFloatComponent: () => {},
+  setFloat: () => console.log("'setFloat()' function not found!"),
 };

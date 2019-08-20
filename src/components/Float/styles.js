@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 import { Modal as BootstrapModal } from 'react-bootstrap';
 
-// eslint-disable-next-line import/prefer-default-export
 export const Modal = styled(BootstrapModal)`
   display: flex !important;
   justify-content: center;
@@ -46,4 +45,30 @@ export const Modal = styled(BootstrapModal)`
       }
     }
   }
+`;
+
+export const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 10px;
+`;
+
+Header.Buttons = styled.div`
+  display: flex;
+`;
+
+Header.Title = styled.span`
+  font-size: 30px;
+`;
+
+export const Circle = styled.div`
+  width: ${({ size }) => size || '50px'};
+  height: ${({ size }) => size || '50px'};
+
+  background: ${({ color }) => color || '#CCC'};
+  border-radius: 50%;
+
+  margin-right: 7px;
 `;

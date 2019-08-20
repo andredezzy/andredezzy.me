@@ -10,18 +10,19 @@ import Home from './pages/Home';
 import Float from './components/Float';
 
 export default function App() {
-  const [floatComponent, setFloatComponent] = useState(null);
+  const [float, setFloat] = useState(null);
 
   return (
     <>
       <Container>
-        <Route exact path="/" component={() => <Home setFloatComponent={setFloatComponent} />} />
+        <Route exact path="/" component={() => <Home setFloat={setFloat} />} />
       </Container>
 
       <Float
-        show={floatComponent !== null}
-        render={floatComponent}
-        onClose={() => setFloatComponent(null)}
+        show={float !== null}
+        title={float ? float.title : null}
+        render={float ? float.component : null}
+        onClose={() => setFloat(null)}
       />
 
       <GlobalStyle />

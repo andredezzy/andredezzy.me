@@ -11,7 +11,7 @@ export default function Card({
       fontSize={fontSize}
       opacity={opacity}
       centered={centered}
-      onClick={() => onClick(id)}
+      onClick={() => onClick(id, title)}
     >
       <span>{title}</span>
     </Container>
