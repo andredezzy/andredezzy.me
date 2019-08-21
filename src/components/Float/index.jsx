@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Modal, Header, Circle } from './styles';
+import {
+  Modal, Header, Circle, Separator,
+} from './styles';
 
 export default function Float({
   show, title, render, onClose,
@@ -10,13 +12,15 @@ export default function Float({
     <Modal show={show} onHide={onClose}>
       <Header>
         <Header.Buttons>
-          <Circle size="25px" color="red" />
-          <Circle size="25px" color="yellow" />
-          <Circle size="25px" color="green" />
+          <Circle size="25px" color="#FF0000" onClick={onClose} />
+          <Circle size="25px" color="#FFBA00" onClick={onClose} />
+          <Circle size="25px" color="#00FF12" onClick={onClose} />
         </Header.Buttons>
 
         <Header.Title>{title}</Header.Title>
       </Header>
+
+      <Separator />
 
       {render}
     </Modal>
