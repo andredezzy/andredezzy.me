@@ -7,7 +7,7 @@ import Header from '@/components/Header';
 import Body from '@/components/Body';
 import Card from '@/components/Card';
 
-import { getComponentForCard } from '@/components/Float/pages';
+import { getComponentForCard } from '@/util/Cards';
 
 export default function Home({ setFloat }) {
   function handleOpenCard(cardId, title) {

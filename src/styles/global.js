@@ -61,4 +61,8 @@ export default createGlobalStyle`
       max-width: 1220px;
     }
   }
+
+  .modal-backdrop.show {
+    opacity: .6;
+  }
 `;
