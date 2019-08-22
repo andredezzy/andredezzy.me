@@ -1,25 +1,46 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-import Language from '@/components/Language';
+import api from '@/services/api';
 
-import { Container, Card } from './styles';
+import { getComponentForLanguage } from '@/components/Language';
+import Star from '@/components/Star';
+
+import { Container, Card, Gradient } from './styles';
 
 export default function MyProjects() {
-  return (
-    <Container>
-      <Card>
-        <Card.Title>andredezzy.me</Card.Title>
-        <Card.Description>
-          <span role="img" aria-label="emoji">
-            🔥
-          </span>
-          My website (portfolio), and my personal card
-        </Card.Description>
+  const [repositories, setRepositories] = useState([]);
 
-        <Card.Information>
-          <Language label="JavaScript" color="#F1E05A" />
-        </Card.Information>
-      </Card>
-    </Container>
+  useEffect(() => {
+    async function loadRepositories() {
+      const response = await api.get('/users/andredezzy/repos');
+
+      setRepositories(response.data);
+    }
+
+    loadRepositories();
+  }, []);
+
+  return (
+    <>
+      <Container>
+        {repositories.length > 0 ? (
+          repositories.map(repository => (
+            <Card>
+              <Card.Title>{repository.name}</Card.Title>
+              <Card.Description>{repository.description}</Card.Description>
+
+              <Card.Information>
+                {getComponentForLanguage(repository.language)}
+                <Star amount={repository.stargazers_count} style={{ marginLeft: '15px' }} />
+              </Card.Information>
+            </Card>
+          ))
+        ) : (
+          <h3>No repositories</h3>
+        )}
+      </Container>
+
+      <Gradient to="bottom" />
+    </>
   );
 }

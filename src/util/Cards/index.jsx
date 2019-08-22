@@ -13,5 +13,5 @@ const pages = [
 export function getComponentForCard(cardId) {
   const page = pages.find(element => element.card === cardId);
 
-  return page ? page.component : `No component found for '${cardId}'`;
+  return page ? page.component : <span id="error">{`No component found to '${cardId}'`}</span>;
 }

@@ -8,6 +8,8 @@ export const Container = styled.div`
     font-size: 14px;
     color: #707070;
     opacity: 0.6;
+
+    margin-bottom: -2px;
   }
 `;
 
