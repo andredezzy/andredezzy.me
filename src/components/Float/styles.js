@@ -11,14 +11,20 @@ export const Modal = styled(BootstrapModal)`
     max-width: none;
 
     & .modal-content {
+      max-height: 500px;
+
       background: #f1f1f1;
 
       border: 0;
       border-radius: 0.5rem;
 
-      padding: 10px 20px 20px;
+      padding: 10px 20px 0 20px;
 
       transition: width 0.3s ease;
+
+      & > span#error {
+        margin-bottom: 10px;
+      }
 
       @media (max-width: 830px) {
         width: 90vw;
@@ -108,5 +114,5 @@ export const Separator = styled.div`
   background: #e5e5e5;
   border-radius: 100px;
 
-  margin: 8px 0 20px;
+  margin: 8px 0;
 `;
