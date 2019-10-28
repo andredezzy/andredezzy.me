@@ -5,6 +5,12 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
 
+  transition: all 125ms ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
   & > svg {
     margin-right: 6px;
   }
@@ -15,5 +21,7 @@ export const Container = styled.div`
     opacity: 0.6;
 
     margin-bottom: -2px;
+
+    cursor: default;
   }
 `;

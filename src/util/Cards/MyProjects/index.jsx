@@ -20,12 +20,16 @@ export default function MyProjects() {
     loadRepositories();
   }, []);
 
+  function handleClickCard({ html_url }) {
+    window.open(html_url, '_blank');
+  }
+
   return (
     <>
       <Container>
         {repositories.length > 0 ? (
           repositories.map(repository => (
-            <Card>
+            <Card key={repository.id} onClick={() => handleClickCard(repository)}>
               <Card.Title>{repository.name}</Card.Title>
               <Card.Description>{repository.description}</Card.Description>
 
@@ -36,8 +40,8 @@ export default function MyProjects() {
             </Card>
           ))
         ) : (
-          <h3>No repositories</h3>
-        )}
+            <h3>No repositories</h3>
+          )}
       </Container>
 
       <Gradient to="bottom" />

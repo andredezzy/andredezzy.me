@@ -39,6 +39,21 @@ export const Card = styled.div`
 
   margin: 10px 0;
 
+  overflow: hidden;
+
+  cursor: pointer;
+
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: translateY(-1.5px);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.075);
+  }
+
+  @media screen and (max-width: 576px) {
+    max-width: 96%;
+  }
+
   span[aria-label='emoji'] {
     margin-right: 7px;
   }
