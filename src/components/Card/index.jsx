@@ -1,13 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useContext } from "react";
+import PropTypes from "prop-types";
 
-import { Container } from './styles';
+import { ThemeContext } from "styled-components";
+
+import { Container } from "./styles";
 
 export default function Card({
-  id, title, fontSize, opacity, centered, onClick,
+  id,
+  title,
+  fontSize,
+  opacity,
+  centered,
+  onClick
 }) {
+  const theme = useContext(ThemeContext);
+
   return (
     <Container
+      theme={theme}
       fontSize={fontSize}
       opacity={opacity}
       centered={centered}
@@ -24,7 +34,7 @@ Card.propTypes = {
   fontSize: PropTypes.string,
   opacity: PropTypes.number,
   centered: PropTypes.bool,
-  onClick: PropTypes.func,
+  onClick: PropTypes.func
 };
 
 Card.defaultProps = {
@@ -32,5 +42,5 @@ Card.defaultProps = {
   fontSize: null,
   opacity: 1,
   centered: false,
-  onClick: () => {},
+  onClick: () => {}
 };

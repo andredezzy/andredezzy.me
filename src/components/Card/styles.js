@@ -1,13 +1,13 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 // eslint-disable-next-line import/prefer-default-export
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: ${({ centered }) => (centered ? 'center' : 'flex-end')};
+  justify-content: ${({ centered }) => (centered ? "center" : "flex-end")};
   align-items: center;
 
-  background: #fff;
+  background: ${({ theme }) => theme.colors.primary};
 
   margin: 15px;
 
@@ -32,12 +32,12 @@ export const Container = styled.div`
   }
 
   & > span {
-    font-size: ${({ fontSize }) => fontSize || '44px'};
+    font-size: ${({ fontSize }) => fontSize || "44px"};
 
-    opacity: ${({ opacity }) => opacity || '1'};
+    opacity: ${({ opacity }) => opacity || "1"};
 
     @media (max-width: 1216px) {
-      font-size: ${({ fontSize }) => fontSize || '39px'};
+      font-size: ${({ fontSize }) => fontSize || "39px"};
     }
   }
 `;
