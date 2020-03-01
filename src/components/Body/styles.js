@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-// eslint-disable-next-line import/prefer-default-export
+import { getLuminance, darken, lighten } from "polished";
+
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
@@ -38,16 +39,22 @@ export const Container = styled.div`
   &::-webkit-scrollbar-track,
   &::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    border: 3px solid #f2f2f2;
+    border: 3px solid ${({ theme }) => theme.colors.background};
 
     margin: 0 35px;
   }
 
   &::-webkit-scrollbar-track {
-    background: #ccc;
+    background: ${({ theme }) =>
+      getLuminance(theme.colors.background) < 0.1
+        ? lighten(0.05, theme.colors.background)
+        : darken(0.1, theme.colors.background)};
   }
 
   &::-webkit-scrollbar-thumb {
-    background: #707070;
+    background: ${({ theme }) =>
+      getLuminance(theme.colors.background) < 0.1
+        ? lighten(0.1, theme.colors.background)
+        : darken(0.3, theme.colors.background)};
   }
 `;
