@@ -8544,6 +8544,11 @@ react-error-overlay@^5.1.6:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.1.6.tgz#0cd73407c5d141f9638ae1e0c63e7b2bf7e9929d"
   integrity sha512-X1Y+0jR47ImDVr54Ab6V9eGk0Hnu7fVWGeHQSOXHf/C2pF9c6uy3gef8QUeuUiWlNb0i08InPSE5a/KJzNzw1Q==
 
+react-fade-in@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/react-fade-in/-/react-fade-in-0.1.7.tgz#b68686b85071375f4f9cbee85ad96ffb6adf6bce"
+  integrity sha512-g8U5RxvwN4hDKIR0INQS3ZwR56fBmFS/cXw5JngDVpGobr58tzX8aA+crX+zUpiisMWiY7kCyUu0750HNXb+tg==
+
 react-icons@^3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-3.7.0.tgz#64fe46231fabfeea27895edeae6c3b78114b8c8f"
